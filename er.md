@@ -1,6 +1,7 @@
 ##문제 1의 DB
 ```mermaid
 erDiagram
+
     COMPANY {
         string 회사명 PK
         string 산업분야
@@ -33,9 +34,7 @@ erDiagram
     }
 
     UNIVERSITY ||--o{ JOB_SEEKER : "출신"
-    COMPANY ||--o{ APPLY : "지원받음"
-    JOB_SEEKER ||--o{ APPLY : "지원함"
-    
+    COMPANY ||--|| APPLY : "지원"
     JOB_SEEKER ||--o| HIRED_RECORD : "취업확정"
     COMPANY ||--o{ HIRED_RECORD : "소속됨"
 ```
