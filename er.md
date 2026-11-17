@@ -34,7 +34,7 @@ erDiagram
     }
 
     UNIVERSITY ||--o{ JOB_SEEKER : "출신"
-    COMPANY ||--|| APPLY : "지원"
+    JOB_SEEKER ||--|| COMPANY : "지원"
     JOB_SEEKER ||--o| HIRED_RECORD : "취업확정"
     COMPANY ||--o{ HIRED_RECORD : "소속됨"
 ```
