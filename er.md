@@ -100,7 +100,6 @@ erDiagram
 
     COMPANY ||--o{ BUS : 소유함
     COMPANY ||--o{ BUS_ROUTE : 관리함
-    COMPANY ||--o{ COMPANY_DRIVER : 고용함
     COMPANY ||--o{ DRIVER : 고용함
     
     BUS_ROUTE ||--o{ ROUTE_STOP : 구성함
