@@ -27,16 +27,14 @@ erDiagram
         int 취업학생수
     }
 
-    HIRED_RECORD {
+    HIRED_JOB_SEEKER {
         string 주민등록번호 PK, FK
         string 회사명 PK, FK
-        string 취업상태
     }
 
     UNIVERSITY ||--o{ JOB_SEEKER : "출신"
     JOB_SEEKER ||--|| COMPANY : "지원"
     JOB_SEEKER ||--o| HIRED_RECORD : "취업확정"
-    COMPANY ||--o{ HIRED_RECORD : "소속됨"
 ```
 
 ##문제 2의 DB
