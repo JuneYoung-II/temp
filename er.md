@@ -63,7 +63,7 @@ erDiagram
         string 버스번호 PK, FK
         string 정류장ID PK, FK
         string 정류장이름
-        int 정류장 순서
+        int 정류장순서
         int 다음정류장소요시간
     }
 
