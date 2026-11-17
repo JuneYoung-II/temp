@@ -105,7 +105,8 @@ erDiagram
     BUS_ROUTE ||--o{ ROUTE_STOP : 구성함
     BUS_STOP ||--o{ ROUTE_STOP : 포함됨
     
-    BUS ||--|| BUS_ROUTE : 배정됨
+    BUS_ROUTE ||--o{ BUS_ASSIGNMENT : 할당됨
+    BUS ||--o{ BUS_ASSIGNMENT : 배정됨
     
     DRIVER ||--o{ DRIVER_OPERATION : 담당함
     BUS ||--o{ DRIVER_OPERATION : 운행됨
