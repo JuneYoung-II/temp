@@ -38,6 +38,7 @@ erDiagram
     UNIVERSITY ||--o{ JOB_SEEKER : "출신"
     JOB_SEEKER ||--|| COMPANY : "지원"
     JOB_SEEKER ||--o| HIRED_JOB_SEEKER : "취업확정"
+    COMPANY ||--o| HIRED_JOB_SEEKER : "채용확정"
 ```
 
 ##문제 2의 DB
