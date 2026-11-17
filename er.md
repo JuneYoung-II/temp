@@ -59,15 +59,10 @@ erDiagram
         string 회사명 FK
     }
 
-    BUS_STOP {
-        string 정류장ID PK
-        string 정류장이름
-    }
-
     ROUTE_STOP {
         string 버스번호 PK, FK
         string 정류장ID PK, FK
-        int 정류장순서
+        string 정류장이름
         int 다음정류장소요시간
     }
 
@@ -103,7 +98,6 @@ erDiagram
     COMPANY ||--o{ DRIVER : 고용함
     
     BUS_ROUTE ||--o{ ROUTE_STOP : 구성함
-    BUS_STOP ||--o{ ROUTE_STOP : 포함됨
     
     BUS_ROUTE ||--o{ BUS_ASSIGNMENT : 할당됨
     BUS ||--o{ BUS_ASSIGNMENT : 배정됨
